@@ -19,7 +19,6 @@ async function status(request, response) {
     values: [databaseName],
   });
 
-  console.log(databaseOpenedConnectionsResult);
   const databaseOpenedConnectionsValue =
     databaseOpenedConnectionsResult.rows.length;
 
