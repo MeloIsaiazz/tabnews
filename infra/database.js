@@ -10,7 +10,6 @@ async function query(queryObject) {
     ssl: getSSLValues(),
   };
   const client = new Client(clientOptions);
-  console.log(clientOptions);
 
   try {
     await client.connect();
